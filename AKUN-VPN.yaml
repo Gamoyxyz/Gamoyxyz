@@ -1,0 +1,20 @@
+proxies:
+#isi akun tunnel
+- name: "Azure"
+  type: vless
+  server: quiz.vidio.com
+  port: 443
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: x12.merkuri.cloud
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: x12.merkuri.cloud
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protoco
